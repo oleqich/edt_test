@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfAccounts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="034dd429-92ab-4d78-98a7-ef5993e6d6d6">
+  <producedTypes>
+    <objectType typeId="b7294331-1368-4a49-a346-7046219b50f7" valueTypeId="67aa648b-60a3-43b7-8a96-edbb33f2abc2"/>
+    <refType typeId="5aba72e3-e2dd-4ccb-9f58-9bc39b8d217b" valueTypeId="465c7868-2987-4ea1-b6cd-6246eb8e4e69"/>
+    <selectionType typeId="2497dbf4-88e7-4249-ac9d-3d8ff8d856d3" valueTypeId="7e30727a-ad93-4fc9-94b9-158dfdeefb86"/>
+    <listType typeId="90e994c5-a778-44e6-ba38-f953ca64a705" valueTypeId="b849775e-1e44-4ca2-8c60-87e0867e0b04"/>
+    <managerType typeId="63d1c71d-24eb-44c7-8697-fc750d2c3ec3" valueTypeId="318c2fb9-9965-4303-8968-04953d588922"/>
+    <extDimensionTypes typeId="4835b516-68e9-4f53-8fd6-08d9eb553ed1" valueTypeId="efec5f60-f493-4e45-8690-9344491dd4d0"/>
+    <extDimensionTypesRow typeId="8e291559-03a0-4588-afaa-63b5f4b24d26" valueTypeId="b0f5994c-3c31-415f-b781-249c48fbc505"/>
+  </producedTypes>
+  <name>Хозрасчетный</name>
+  <synonym>
+    <key>ru</key>
+    <value>Хозрасчетный</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ChartOfAccounts.Хозрасчетный.StandardAttribute.Description</inputByString>
+  <inputByString>ChartOfAccounts.Хозрасчетный.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <extDimensionTypes>ChartOfCharacteristicTypes.ВидыСубконто</extDimensionTypes>
+  <maxExtDimensionCount>3</maxExtDimensionCount>
+  <codeMask>@@.@@</codeMask>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <checkUnique>true</checkUnique>
+  <predefined>
+    <items id="aec7f2d4-91aa-49b7-aa21-22b5c83e78f8">
+      <name>ТоварыНаСклад</name>
+      <description>Товары на склад</description>
+      <code>01.01</code>
+      <order>01.00</order>
+      <accountingFlags>ChartOfAccounts.Хозрасчетный.AccountingFlag.Количественный</accountingFlags>
+      <extDimensionTypes>
+        <characteristicType>ChartOfCharacteristicTypes.ВидыСубконто.Номенклатура</characteristicType>
+      </extDimensionTypes>
+      <extDimensionTypes>
+        <characteristicType>ChartOfCharacteristicTypes.ВидыСубконто.Склад</characteristicType>
+      </extDimensionTypes>
+    </items>
+    <items id="173c2b8f-9f7f-4c18-a9dc-c39c8308e208">
+      <name>Поставщики</name>
+      <description>Поставщики</description>
+      <code>01.02</code>
+      <accountType>ActivePassive</accountType>
+      <order>01.02</order>
+      <extDimensionTypes>
+        <characteristicType>ChartOfCharacteristicTypes.ВидыСубконто.Поставщик</characteristicType>
+      </extDimensionTypes>
+    </items>
+    <items id="b618b48d-a6ba-4632-a333-bab6543a27cb">
+      <name>ТоварыКонтрагенту</name>
+      <description>Товары контрагенту</description>
+      <code>01.03</code>
+      <accountType>ActivePassive</accountType>
+      <order>01.03</order>
+      <accountingFlags>ChartOfAccounts.Хозрасчетный.AccountingFlag.Количественный</accountingFlags>
+      <extDimensionTypes>
+        <characteristicType>ChartOfCharacteristicTypes.ВидыСубконто.Контрагент</characteristicType>
+      </extDimensionTypes>
+      <extDimensionTypes>
+        <characteristicType>ChartOfCharacteristicTypes.ВидыСубконто.Номенклатура</characteristicType>
+      </extDimensionTypes>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <autoOrderByCode>true</autoOrderByCode>
+  <orderLength>9</orderLength>
+  <accountingFlags uuid="6e81a8b7-5cfc-417f-881b-0ff3b3103982">
+    <name>Количественный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количественный</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </accountingFlags>
+</mdclass:ChartOfAccounts>

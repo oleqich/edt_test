@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccountingRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="97a3335a-28ff-42f1-afa0-137ddc4feddd">
+  <producedTypes>
+    <selectionType typeId="a2bcda9a-622b-4c35-82e0-2ce8b6fc38fa" valueTypeId="d3e80304-e342-45b3-b653-99cd8b1975a5"/>
+    <listType typeId="1dd6e09d-d954-434b-9ca0-71a8e0f12756" valueTypeId="d798a658-2633-4d6c-89ff-100d12261bfa"/>
+    <managerType typeId="d6634dbc-69f5-47f4-af47-348cfacc7b47" valueTypeId="fc630bb5-944f-40e8-98a0-c07e8668527b"/>
+    <recordSetType typeId="28ec346b-edc4-4318-9ea8-2ee2d3488e6a" valueTypeId="b81624f0-0900-4ebc-a99f-1fa094b6d664"/>
+    <recordKeyType typeId="127f34f5-3319-4e28-8f63-3f54a7488b08" valueTypeId="433a6dba-2e99-4e8b-a280-869b40a662a1"/>
+    <recordType typeId="9923fdd0-39d5-4bf1-a35e-3e58ee9aa3ca" valueTypeId="20e0f2b6-1d85-45b4-b7f1-bc644117d706"/>
+    <extDimensionsType typeId="3248c91b-61b5-411c-9335-1d5a6923df2b" valueTypeId="0a5e12d0-f73f-4f78-81b2-a40429d1dacf"/>
+  </producedTypes>
+  <name>Хозрасчетный</name>
+  <synonym>
+    <key>ru</key>
+    <value>Хозрасчетный</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <chartOfAccounts>ChartOfAccounts.Хозрасчетный</chartOfAccounts>
+  <correspondence>true</correspondence>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <dimensions uuid="8e56c660-53f7-4711-9f97-124003328a11">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <balance>true</balance>
+  </dimensions>
+  <resources uuid="2a9ec4a4-c81b-4f28-a4ad-ba16c6594d0e">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <balance>true</balance>
+  </resources>
+  <resources uuid="0b578089-e06d-4e0e-80f1-5a11c7e3d8a5">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <accountingFlag>ChartOfAccounts.Хозрасчетный.AccountingFlag.Количественный</accountingFlag>
+  </resources>
+</mdclass:AccountingRegister>

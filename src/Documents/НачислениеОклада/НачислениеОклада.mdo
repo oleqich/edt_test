@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="40695153-8140-4b5f-9b3c-fe0fb89fdadf">
+  <producedTypes>
+    <objectType typeId="a02c340a-7e38-405f-b830-f61e324def30" valueTypeId="d6ab6d5b-507a-4acd-8396-b226827fa2a4"/>
+    <refType typeId="c6c1a87a-c7ba-4905-9293-46555d35ff70" valueTypeId="3ed9776b-498c-4391-8dbd-1c30392087e2"/>
+    <selectionType typeId="7bbf4b4c-92b4-4282-a07f-cbc3fc1ad1fe" valueTypeId="d2d14f71-a9fb-4fb9-9fcb-3574ffbab309"/>
+    <listType typeId="19d861ad-1996-4277-8d57-7e41cb6ce093" valueTypeId="250f544c-890a-4026-bbc7-afc7e57e02c5"/>
+    <managerType typeId="a08bd788-2462-4977-b10f-a6787fd5d996" valueTypeId="b6410483-2b3f-4aed-aa97-dc674211e36b"/>
+  </producedTypes>
+  <name>НачислениеОклада</name>
+  <synonym>
+    <key>ru</key>
+    <value>Начисление оклада</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.НачислениеОклада.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecords>CalculationRegister.Начисления</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="204cee75-8542-4870-bba4-1dcc269a8cc2">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="71467cc2-0edf-4316-b66f-3b8393e303be">
+    <name>ПериодДействияНачало</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период действия начало</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c3782ebc-cee5-43ae-bc77-4bdf645e0031">
+    <name>ПериодДействияКонец</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период действия конец</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4b60ed2a-c763-4225-93dc-3122c101f169">
+    <name>СтавкаОклада</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ставка оклада</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Document>

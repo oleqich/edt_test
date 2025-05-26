@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CalculationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dd8c1eb4-a601-4180-b23f-ce0f1d29975d">
+  <producedTypes>
+    <selectionType typeId="e4e8f558-4fb0-41f7-ba84-0938dbae916c" valueTypeId="3380a49f-0dd5-41a3-ab7a-55b604875773"/>
+    <listType typeId="48a9c39a-2623-4d6d-808e-b32e1b0a350f" valueTypeId="756ad9df-9dc0-4063-955a-0d4d73d32db1"/>
+    <managerType typeId="046efaa6-31e1-4ea4-ac8b-e6ff7131e665" valueTypeId="eb92156e-30b6-423d-bf08-63d88281b358"/>
+    <recordSetType typeId="4a59fe00-7d9b-4eea-a981-b1778ada65d3" valueTypeId="41434f60-660e-44b8-bdc8-46746de2dfbf"/>
+    <recordKeyType typeId="8b5cc5bc-c8eb-4327-96cd-3ecaa19da659" valueTypeId="7dd61770-65e8-4ba9-9bfb-a3def698e2f3"/>
+    <recordType typeId="1eb33f91-5cf5-49e3-a743-c58bac34cc29" valueTypeId="a0b3542b-2c98-4182-ba8a-d6272d98e7c8"/>
+    <recalcsType typeId="5c05f1dc-094b-4717-a572-d0aff52ca687" valueTypeId="b3b300a7-659f-4865-8588-6a25774a863c"/>
+  </producedTypes>
+  <name>Начисления</name>
+  <synonym>
+    <key>ru</key>
+    <value>Начисления</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <periodicity>Month</periodicity>
+  <actionPeriod>true</actionPeriod>
+  <basePeriod>true</basePeriod>
+  <schedule>InformationRegister.ПроизводственныйКалендарь</schedule>
+  <scheduleValue>InformationRegister.ПроизводственныйКалендарь.Resource.РабочийДень</scheduleValue>
+  <scheduleDate>InformationRegister.ПроизводственныйКалендарь.Dimension.Дата</scheduleDate>
+  <chartOfCalculationTypes>ChartOfCalculationTypes.Начисления</chartOfCalculationTypes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="ec92db8b-263c-44aa-a884-7fc2abbb4ef4">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="b367857c-6f1b-4d8a-bfec-166d7f154de3">
+    <name>Параметр</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметр</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="dbf59b4b-0076-4ebf-af1a-3fba7c36e7a7">
+    <name>График</name>
+    <synonym>
+      <key>ru</key>
+      <value>График</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Графики</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <scheduleLink>InformationRegister.ПроизводственныйКалендарь.Dimension.График</scheduleLink>
+  </attributes>
+  <dimensions uuid="8cd3cd7c-86a4-4920-8019-ee5b0a871772">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+  <recalculations uuid="5e9e2039-807a-4379-adbe-4ff0b5f89ad8">
+    <producedTypes>
+      <recordType typeId="5d1ebab0-9f46-4bfd-89d1-2a38086986d1" valueTypeId="b01cf6b6-e6f8-42bd-b746-5201bd9a4e61"/>
+      <managerType typeId="cadc3c2e-34ea-4565-94a8-0395f61cd721" valueTypeId="61d0efac-1ab3-4657-9ca3-a02fdedb12b0"/>
+      <recordSetType typeId="bdf4d193-7dac-45ac-a08e-6c7de42b82e9" valueTypeId="2fa86ff0-72f1-46d5-927c-86f6e589b9fe"/>
+    </producedTypes>
+    <name>Перерасчет1</name>
+    <dataLockControlMode>Managed</dataLockControlMode>
+  </recalculations>
+</mdclass:CalculationRegister>
