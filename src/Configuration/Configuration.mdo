@@ -48,6 +48,7 @@
   <documents>Document.НачислениеПремий</documents>
   <documents>Document.НачислениеОкладаПоДням</documents>
   <documents>Document.ВводНачислений</documents>
+  <reports>Report.Отчет</reports>
   <informationRegisters>InformationRegister.ПроизводственныйКалендарь</informationRegisters>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.ВидыСубконто</chartsOfCharacteristicTypes>
   <chartsOfAccounts>ChartOfAccounts.Хозрасчетный</chartsOfAccounts>
